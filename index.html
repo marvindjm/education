@@ -64,17 +64,22 @@ body {
 </head/>
 <body>
 ><h1>Comic Luna  autor: Ana María de Leon</h1>
+  <button onclick = "GFG_Fun()">
+        play/pause
+    </button>
 <div id="slideshow">
   <div id="images" class="slide-wrapper">
 <div id="images" class="slide-wrapper">
-<!-- 
-    <div class="slide"><h1 class="slide-number">1</h1></div>
-    <div class="slide"><h1 class="slide-number">2</h1></div>
-    <div class="slide"><h1 class="slide-number">3</h1></div>
-    <div class="slide"><h1 class="slide-number">4</h1></div>
-    <div class="slide"><h1 class="slide-number">5</h1></div>
--->
   <div class="slide"><img src="images/image (0).svg" class="slide-number"></div><div class="slide"><img src="images/image (1).svg" class="slide-number"></div><div class="slide"><img src="images/image (2).svg" class="slide-number"></div><div class="slide"><img src="images/image (3).svg" class="slide-number"></div><div class="slide"><img src="images/image (4).svg" class="slide-number"></div><div class="slide"><img src="images/image (5).svg" class="slide-number"></div><div class="slide"><img src="images/image (6).svg" class="slide-number"></div><div class="slide"><img src="images/image (7).svg" class="slide-number"></div><div class="slide"><img src="images/image (8).svg" class="slide-number"></div><div class="slide"><img src="images/image (9).svg" class="slide-number"></div><div class="slide"><img src="images/image (10).svg" class="slide-number"></div><div class="slide"><img src="images/image (11).svg" class="slide-number"></div><div class="slide"><img src="images/image (12).svg" class="slide-number"></div><div class="slide"><img src="images/image (13).svg" class="slide-number"></div><div class="slide"><img src="images/image (14).svg" class="slide-number"></div><div class="slide"><img src="images/image (15).svg" class="slide-number"></div><div class="slide"><img src="images/image (16).svg" class="slide-number"></div><div class="slide"><img src="images/image (17).svg" class="slide-number"></div><div class="slide"><img src="images/image (18).svg" class="slide-number"></div><div class="slide"><img src="images/image (19).svg" class="slide-number"></div><div class="slide"><img src="images/image (20).svg" class="slide-number"></div><div class="slide"><img src="images/image (21).svg" class="slide-number"></div><div class="slide"><img src="images/image (22).svg" class="slide-number"></div><div class="slide"><img src="images/image (23).svg" class="slide-number"></div><div class="slide"><img src="images/image (24).svg" class="slide-number"></div><div class="slide"><img src="images/image (25).svg" class="slide-number"></div><div class="slide"><img src="images/image (26).svg" class="slide-number"></div><div class="slide"><img src="images/image (27).svg" class="slide-number"></div><div class="slide"><img src="images/image (28).svg" class="slide-number"></div><div class="slide"><img src="images/image (29).svg" class="slide-number"></div><div class="slide"><img src="images/image (30).svg" class="slide-number"></div></div>  </div>
 </div>
+  <script>
+function GFG_Fun() {
+const anime = document.getElementById('images');
+const running = anime.style.animationPlayState === 'running';
+anime.style.animationPlayState = running ? 'paused' : 'running';
+}
+        
+    </script>
+
 </body>
 </html>
