@@ -11,13 +11,14 @@ body {
   text-align: center;
   overflow: hidden;
   height: 510px;
-  width: 728px;
+  width: 728;
   margin: 0 auto;
 }
 
 .slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 18s ease infinite;
+  width: 24752px;
+  -webkit-animation: slide 400s ;
+-webkit-animation-play-state: paused;
 }
 
 .slide {
@@ -49,27 +50,50 @@ body {
 }
 
 @-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+/*
+  3% {margin-left: 0px;}
+  6% {margin-left: -728px;}
+  9% {margin-left: -1456px;}
+  12% {margin-left: -2184px;}
+  15% {margin-left: -3640px;}
+  18% {margin-left: -4368px;}
+  21% {margin-left: -5096px;}
+  24% {margin-left: -5824px;}
+  27% {margin-left: -6552px;}
+  30% {margin-left: -7280px;}
+*/
+0% {margin-left: -0px;}
+100% {margin-left: -24752px;}
+
+
 }
 </style>
 </head/>
 <body>
+><h1>Juego de Ana María de Leon</h1>
+<button onclick = "GFG_Fun()">
+        Ver Cartoon
+    </button>
 <div id="slideshow">
-  <div class="slide-wrapper">
+  <div id="images" class="slide-wrapper">
+<div id="images" class="slide-wrapper">
+<!-- 
     <div class="slide"><h1 class="slide-number">1</h1></div>
     <div class="slide"><h1 class="slide-number">2</h1></div>
     <div class="slide"><h1 class="slide-number">3</h1></div>
     <div class="slide"><h1 class="slide-number">4</h1></div>
     <div class="slide"><h1 class="slide-number">5</h1></div>
-  </div>
+-->
+  <div class="slide"><img src="images/image (0).svg" class="slide-number"></div><div class="slide"><img src="images/image (1).svg" class="slide-number"></div><div class="slide"><img src="images/image (2).svg" class="slide-number"></div><div class="slide"><img src="images/image (3).svg" class="slide-number"></div><div class="slide"><img src="images/image (4).svg" class="slide-number"></div><div class="slide"><img src="images/image (5).svg" class="slide-number"></div><div class="slide"><img src="images/image (6).svg" class="slide-number"></div><div class="slide"><img src="images/image (7).svg" class="slide-number"></div><div class="slide"><img src="images/image (8).svg" class="slide-number"></div><div class="slide"><img src="images/image (9).svg" class="slide-number"></div><div class="slide"><img src="images/image (10).svg" class="slide-number"></div><div class="slide"><img src="images/image (11).svg" class="slide-number"></div><div class="slide"><img src="images/image (12).svg" class="slide-number"></div><div class="slide"><img src="images/image (13).svg" class="slide-number"></div><div class="slide"><img src="images/image (14).svg" class="slide-number"></div><div class="slide"><img src="images/image (15).svg" class="slide-number"></div><div class="slide"><img src="images/image (16).svg" class="slide-number"></div><div class="slide"><img src="images/image (17).svg" class="slide-number"></div><div class="slide"><img src="images/image (18).svg" class="slide-number"></div><div class="slide"><img src="images/image (19).svg" class="slide-number"></div><div class="slide"><img src="images/image (20).svg" class="slide-number"></div><div class="slide"><img src="images/image (21).svg" class="slide-number"></div><div class="slide"><img src="images/image (22).svg" class="slide-number"></div><div class="slide"><img src="images/image (23).svg" class="slide-number"></div><div class="slide"><img src="images/image (24).svg" class="slide-number"></div><div class="slide"><img src="images/image (25).svg" class="slide-number"></div><div class="slide"><img src="images/image (26).svg" class="slide-number"></div><div class="slide"><img src="images/image (27).svg" class="slide-number"></div><div class="slide"><img src="images/image (28).svg" class="slide-number"></div><div class="slide"><img src="images/image (29).svg" class="slide-number"></div><div class="slide"><img src="images/image (30).svg" class="slide-number"></div></div>  </div>
 </div>
 
 <h1>Juego de Ana MarÃ­a</h1>
+
+<script>
+const anime = document.getElementById('images');
+const running = anime.style.animationPlayState === 'running';
+anime.style.animationPlayState = running ? 'paused' : 'running';
+        
+    </script>
 </body>
 </html>
